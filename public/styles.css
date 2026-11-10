@@ -42,7 +42,7 @@
 /* ============ LEFT PANEL ================ */
 
 .left_panel{
-    border: 1px solid green;
+    border: 1px solid rgb(63, 63, 63);
     border-radius: var(--panel-border);
     box-sizing: border-box;
     display: grid;
@@ -105,27 +105,32 @@
 /* ============== RIGHT PANEL ================ */
 
 .right_panel{
-    outline: 1px solid blueviolet;
+    border: 1px solid rgb(63, 63, 63);
     border-radius: var(--panel-border) ;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding: 6px;
 }
 
 .nav_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* outline: 1px solid red; */
+    height: 340px;
+    max-height: 340px;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 .nav_grid button{
     width: auto;
-    height: 90px;
+    height: 100px;
+    font-size: 16px;
 }
 
 .calculator{
     width: 100%;
-    flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;
