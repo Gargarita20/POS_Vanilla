@@ -1,3 +1,4 @@
+// List Items on Left Panel
 function createItemComponent(item_name, quantity){
     const lists = document.createElement("li");
     
@@ -40,4 +41,23 @@ const containers = document.getElementById("item-container");
 
 for(let i = 0; i < 3; i++){
     containers.appendChild(createItemComponent(`Sample Item`, 1));    
+}
+
+// Options on Right Panel 
+
+const options_container = document.getElementById("options-container");
+
+function createOptions(item, id){
+    const options_buttons = document.createElement("button");
+    options_buttons.id = id;
+    options_buttons.textContent = item; //parameter
+    options_buttons.addEventListener("click", ()=>{
+        console.log("This btn clicked");
+    })
+
+    return options_buttons;
+}
+
+for(let i=0; i < 10; i++){
+    options_container.appendChild(createOptions("sample", i+1));
 }
