@@ -61,3 +61,33 @@ function createOptions(item, id){
 for(let i=0; i < 10; i++){
     options_container.appendChild(createOptions("sample", i+1));
 }
+
+// Cost
+
+const subtotal = document.getElementById("subtotal");
+const discount = document.getElementById("discount");
+const tax = document.getElementById("tax")
+const total = document.getElementById("total")
+
+// calculator
+
+const one = document.getElementById("one")
+const two = document.getElementById("two")
+const three = document.getElementById("three")
+const four = document.getElementById("four")
+const five = document.getElementById("five")
+const six = document.getElementById("six")
+const seven = document.getElementById("seven")
+const eight = document.getElementById("eight")
+const nine = document.getElementById("nine")
+const zero = document.getElementById("zero")
+
+const enter = document.getElementById("enter")
+const erase = document.getElementById("erase")
+
+// operations
+
+const add = document.getElementById("plus")
+const minus = document.getElementById("minus")
+const mult = document.getElementById("mult")
+const divide = document.getElementById("divide")
