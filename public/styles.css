@@ -58,19 +58,21 @@
     border: 1px solid rgb(63, 63, 63);
     border-radius: var(--panel-border);
     box-sizing: border-box;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .items{
     border-bottom: 1px solid grey;
     padding: 8px;
+    overflow: auto;
 }
 
 .items ul{
     list-style: none;
     padding: 0;
+    min-height: 500px;
+    max-height: 500px;
 }
 
 .items li{
@@ -109,6 +111,9 @@
 
 .cost{
     padding: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .cost table{
